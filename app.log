@@ -1,0 +1,143 @@
+2024-03-13 13:04:07,094 - INFO - Starting the API...
+2024-03-13 13:04:07,102 - INFO - Started server process [13892]
+2024-03-13 13:04:07,102 - INFO - Waiting for application startup.
+2024-03-13 13:04:07,103 - INFO - Application startup complete.
+2024-03-13 13:05:16,584 - INFO - Starting the API...
+2024-03-13 13:05:16,590 - INFO - Started server process [19060]
+2024-03-13 13:05:16,592 - INFO - Waiting for application startup.
+2024-03-13 13:05:16,592 - INFO - Application startup complete.
+2024-03-13 13:09:48,337 - INFO - Starting the API...
+2024-03-13 13:09:48,344 - INFO - Started server process [12516]
+2024-03-13 13:09:48,344 - INFO - Waiting for application startup.
+2024-03-13 13:09:48,344 - INFO - Application startup complete.
+2024-03-13 13:11:31,832 - INFO - Starting the API...
+2024-03-13 13:11:31,841 - INFO - Started server process [5664]
+2024-03-13 13:11:31,841 - INFO - Waiting for application startup.
+2024-03-13 13:11:31,841 - INFO - Application startup complete.
+2024-03-13 13:32:34,500 - INFO - Starting the API...
+2024-03-13 13:32:34,509 - INFO - Started server process [20472]
+2024-03-13 13:32:34,510 - INFO - Waiting for application startup.
+2024-03-13 13:32:34,510 - INFO - Application startup complete.
+2024-03-13 13:34:35,404 - INFO - Starting the API...
+2024-03-13 13:34:35,415 - INFO - Started server process [10764]
+2024-03-13 13:34:35,415 - INFO - Waiting for application startup.
+2024-03-13 13:34:35,416 - INFO - Application startup complete.
+2024-03-13 13:39:18,371 - INFO - Starting the API...
+2024-03-13 13:39:18,379 - INFO - Started server process [19620]
+2024-03-13 13:39:18,379 - INFO - Waiting for application startup.
+2024-03-13 13:39:18,379 - INFO - Application startup complete.
+2024-03-13 13:40:13,610 - INFO - Starting the API...
+2024-03-13 13:40:13,624 - INFO - Started server process [21212]
+2024-03-13 13:40:13,624 - INFO - Waiting for application startup.
+2024-03-13 13:40:13,624 - INFO - Application startup complete.
+2024-03-13 13:40:57,481 - INFO - Starting the API...
+2024-03-13 13:40:57,491 - INFO - Started server process [7712]
+2024-03-13 13:40:57,491 - INFO - Waiting for application startup.
+2024-03-13 13:40:57,492 - INFO - Application startup complete.
+2024-03-13 13:42:00,981 - INFO - Creating the Employee
+2024-03-13 13:42:01,236 - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column "id" of relation "employees" does not exist
+LINE 1: INSERT INTO employees (id, name, age, email, salary, phone_n...
+                               ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\fastapi\applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\starlette\applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\fastapi\routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\fastapi\routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\main.py", line 27, in create_employee
+    return Services.create_emp(emp=employee, db=db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\Services.py", line 14, in create_emp
+    db.commit()
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1454, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 832, in commit
+    self._prepare_impl()
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 811, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3449, in flush
+    self._flush(objects)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3588, in _flush
+    with util.safe_reraise():
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3549, in _flush
+    flush_context.execute()
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1097, in _emit_insert_statements
+    c = connection._execute_20(
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\heet.mehta_everestek\PycharmProjects\fastApiProject6\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column "id" of relation "employees" does not exist
+LINE 1: INSERT INTO employees (id, name, age, email, salary, phone_n...
+                               ^
+
+[SQL: INSERT INTO employees (id, name, age, email, salary, phone_number, date) VALUES (%(id)s, %(name)s, %(age)s, %(email)s, %(salary)s, %(phone_number)s, %(date)s)]
+[parameters: {'id': 0, 'name': 'string', 'age': 0, 'email': 'string', 'salary': 0, 'phone_number': 'string', 'date': datetime.datetime(2024, 3, 13, 8, 11, 59, 292000, tzinfo=datetime.timezone.utc)}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2024-03-13 13:44:49,867 - INFO - Starting the API...
